@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en-IN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#260b12">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Aditya & Shreya | Our Wedding Invitation</title>
+  <meta name="description" content="The Agrawal and Kothari families invite you to celebrate the wedding of Aditya and Shreya, 10–11 December 2026 at Shivdhara Resort, Palanpur.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Aditya & Shreya — A Wedding Invitation">
+  <meta property="og:description" content="Two hearts. Two families. A celebration of forever. 10–11 December 2026.">
+  <meta property="og:image" content="assets/og-preview.jpg">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Noto+Serif+Devanagari:wght@400;600&family=Playfair+Display:wght@400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body class="is-locked">
+  <div class="page-progress"><span id="pageProgress"></span></div>
+  <canvas id="magicCanvas" aria-hidden="true"></canvas>
+
+  <!-- Interactive invitation opening; not a standalone picture. -->
+  <div id="opening" class="opening" role="dialog" aria-modal="true" aria-labelledby="openTitle">
+    <div class="opening-bg" aria-hidden="true"></div>
+    <div class="opening-shimmer" aria-hidden="true"></div>
+    <div class="opening-pillars" aria-hidden="true"><span></span><span></span></div>
+    <div class="open-ring" aria-hidden="true"><span class="open-ring-inset"></span><span class="open-gem"></span><i>✦</i><b>✦</b></div>
+    <div class="opening-copy">
+      <p class="sanskrit">॥ श्री गणेशाय नमः ॥</p>
+      <p class="micro">A SPECIAL INVITATION FROM THE AGRAWAL &amp; KOTHARI FAMILIES</p>
+      <h1 id="openTitle">Aditya <span>&amp;</span> Shreya</h1>
+      <p class="open-dates">10 — 11 DECEMBER 2026 · PALANPUR</p>
+      <button id="enterButton" class="cta cta-primary">TAP TO OPEN THE INVITATION <span>✦</span></button>
+      <p class="opening-note">Best experienced with sound · You can mute anytime</p>
+    </div>
+    <button id="skipOpening" class="skip-intro">SKIP INTRO →</button>
+  </div>
+
+  <header class="site-header" id="siteHeader">
+    <a class="brand" href="#film" aria-label="Invitation beginning">A<span>✦</span>S</a>
+    <span class="header-date">10 &amp; 11 DECEMBER 2026</span>
+    <div class="header-actions"><button id="soundButton" class="header-button" aria-label="Turn on music" aria-pressed="false"><span id="soundIcon">♫</span> <span id="soundText">SOUND OFF</span></button><button id="menuButton" class="header-button menu-button" aria-expanded="false" aria-controls="jumpMenu">☰ <span>EVENTS</span></button></div>
+    <nav id="jumpMenu" class="jump-menu" aria-label="Jump to celebration"><button data-goto="0">The Invitation</button><button data-goto="1">Our Families</button><button data-goto="2">Sufi Night</button><button data-goto="3">Haldi Carnival</button><button data-goto="4">The Baraat</button><button data-goto="5">Reception</button><button data-goto="6">Sacred Wedding</button><a href="#visit">Venue &amp; RSVP</a></nav>
+  </header>
+
+  <main id="siteMain" inert>
+    <section class="film" id="film" aria-label="Wedding invitation story">
+      <div class="film-stage" id="filmStage">
+        <div class="filmmatte top-matte"></div><div class="filmmatte bottom-matte"></div>
+        <div class="film-scenes" id="filmScenes">
+          <article class="film-scene is-current" data-chapter="0" data-tone="gold" aria-label="Wedding invitation" id="chapter-home">
+            <img class="scene-photo" id="photo-hero" alt="Real Indian wedding editorial photography, illustrative demo photograph" decoding="async">
+            <div class="scene-scrim hero-scrim"></div><div class="camera-glint"></div>
+            <div class="hero-title scene-copy">
+              <p class="eyebrow gold-text">THE AGRAWAL &amp; KOTHARI FAMILIES INVITE YOU</p>
+              <span class="hand-script">to witness a sacred union</span>
+              <h2>Aditya <span>&amp;</span> Shreya</h2>
+              <p class="scene-date">10 — 11 DECEMBER 2026</p>
+              <p class="scene-venue">SHIVDHARA RESORT · PALANPUR, GUJARAT</p>
+              <div class="hero-flourish" aria-hidden="true"><i></i><span>✦</span><i></i></div>
+            </div>
+          </article>
+
+          <article class="film-scene scene-family" data-chapter="1" data-tone="parchment" aria-label="The families and blessings" id="chapter-families">
+            <img class="scene-photo" id="photo-family" alt="Indian wedding family blessing, illustrative stock photography" loading="lazy" decoding="async">
+            <div class="scene-scrim family-scrim"></div>
+            <div class="blessing-paper scene-copy">
+              <img src="assets/ganesha.svg" alt="Lord Ganesh" class="ganesh-icon">
+              <p class="sanskrit">॥ श्री गणेशाय नमः ॥</p>
+              <p class="verse">वक्रतुण्ड महाकाय, सूर्यकोटि समप्रभः।<br>निर्विघ्नं कुरु मे देव, सर्वकार्येषु सर्वदा॥</p>
+              <h2>Two families. <em>One beautiful beginning.</em></h2>
+              <p class="blessing-text">By the grace of Shri Mangalmay Ganesh ji Maharaj, our Kul Devta Shri Narsingh ji Maharaj, our Kuldevi Beri Wali Maa and our Pitru Devta ji, we invite you to share our joy.</p>
+              <div class="family-pair">
+                <div><small>THE GROOM</small><strong>Aditya <i>(Raghav)</i></strong><p>Grandson of Late Smt. Sarbati Devi &amp; Late Shri Lalchand ji Agrawal</p><p>Son of Smt. Beena &amp; Shri Narayanlal Agrawal</p></div>
+                <span class="family-middle">✦</span>
+                <div><small>THE BRIDE</small><strong>Shreya</strong><p>Granddaughter of Smt. Ratan Ben &amp; Late Shri Basant Raj ji Kothari</p><p>Daughter of Smt. Dilkhush &amp; Shri Kamlesh ji Kothari (Mumbai)</p></div>
+              </div>
+            </div>
+          </article>
+
+          <article class="film-scene event-scene" data-chapter="2" data-tone="sufi" aria-label="Sufi Night" id="chapter-sufi">
+            <img class="scene-photo" id="photo-sufi" alt="Indian night-time wedding celebration, illustrative stock photography" loading="lazy" decoding="async"><div class="scene-scrim sufi-scrim"></div>
+            <div class="sufi-moon" aria-hidden="true"></div>
+            <div class="event-copy scene-copy"><p class="eyebrow">CHAPTER I · UNDER THE STARS</p><h2>Sufi <em>Night</em></h2><p class="event-phrase">Where melodies meet moonlight.</p><div class="event-details"><p>THURSDAY · 10 DECEMBER 2026</p><b>7:00 PM</b><p>SHIVDHARA RESORT · PALANPUR</p></div><div class="event-actions"><button class="small-cta" data-event="sufi">ADD TO CALENDAR</button><button class="magic-action" data-magic="star">MAKE IT SPARKLE ✧</button></div></div>
+          </article>
+
+          <article class="film-scene event-scene" data-chapter="3" data-tone="haldi" aria-label="Haldi Carnival" id="chapter-haldi">
+            <img class="scene-photo" id="photo-haldi" alt="Real human guests celebrating a Haldi ceremony, illustrative stock photography" loading="lazy" decoding="async"><div class="scene-scrim haldi-scrim"></div>
+            <div class="haldi-sun" aria-hidden="true"></div>
+            <div class="event-copy scene-copy"><p class="eyebrow">CHAPTER II · A SUNLIT CELEBRATION</p><h2>Haldi <em>Carnival</em></h2><p class="event-phrase">A hundred marigolds. A thousand smiles.</p><div class="event-details"><p>FRIDAY · 11 DECEMBER 2026</p><b>10:30 AM</b><p>SHIVDHARA RESORT · PALANPUR</p></div><div class="event-actions"><button class="small-cta" data-event="haldi">ADD TO CALENDAR</button><button class="magic-action" data-magic="petal">THROW MARIGOLDS ✿</button></div></div>
+          </article>
+
+          <article class="film-scene event-scene" data-chapter="4" data-tone="baraat" aria-label="Baraat procession" id="chapter-baraat">
+            <img class="scene-photo" id="photo-baraat" alt="Real Indian groom on a ceremonial white horse during a Baraat, illustrative stock photography" loading="lazy" decoding="async"><div class="scene-scrim baraat-scrim"></div>
+            <div class="dhol-rays" aria-hidden="true"></div>
+            <div class="event-copy scene-copy"><p class="eyebrow">CHAPTER III · THE GRAND ARRIVAL</p><h2>The <em>Baraat</em></h2><p class="event-phrase">One groom. One horse. A thousand dancing hearts.</p><div class="event-details"><p>FRIDAY · 11 DECEMBER 2026</p><b>5:00 PM</b><p>SHIVDHARA RESORT · PALANPUR</p></div><div class="event-actions"><button class="small-cta" data-event="baraat">ADD TO CALENDAR</button><button class="magic-action" data-magic="confetti">START THE CELEBRATION ✦</button></div></div>
+          </article>
+
+          <article class="film-scene event-scene" data-chapter="5" data-tone="reception" aria-label="Reception" id="chapter-reception">
+            <img class="scene-photo" id="photo-reception" alt="Traditional Indian bride and groom at a wedding reception, illustrative stock photography" loading="lazy" decoding="async"><div class="scene-scrim reception-scrim"></div>
+            <div class="diamond-sheen" aria-hidden="true"></div>
+            <div class="event-copy scene-copy"><p class="eyebrow">CHAPTER IV · AN EVENING OF BLESSINGS</p><h2>The <em>Reception</em></h2><p class="event-phrase">Under a thousand lights, together with you.</p><div class="event-details"><p>FRIDAY · 11 DECEMBER 2026</p><b>7:30 PM ONWARDS</b><p>SHIVDHARA RESORT · PALANPUR</p></div><div class="event-actions"><button class="small-cta" data-event="reception">ADD TO CALENDAR</button><button class="magic-action" data-magic="shimmer">LIGHT IT UP ✧</button></div></div>
+          </article>
+
+          <article class="film-scene event-scene" data-chapter="6" data-tone="wedding" aria-label="The Wedding" id="chapter-wedding">
+            <img class="scene-photo" id="photo-wedding" alt="Real Indian wedding ceremony with floral canopy, illustrative stock photography" loading="lazy" decoding="async"><div class="scene-scrim wedding-scrim"></div>
+            <div class="sacred-glow" aria-hidden="true"></div>
+            <div class="event-copy scene-copy"><p class="eyebrow">CHAPTER V · THE SACRED UNION</p><h2>Seven <em>Vows</em></h2><p class="event-phrase">Before the sacred fire, our forever begins.</p><div class="event-details"><p>FRIDAY NIGHT · 11 DECEMBER 2026</p><b>MIDNIGHT</b><p>SHIVDHARA RESORT · PALANPUR</p></div><div class="event-actions"><button class="small-cta" data-event="wedding">ADD TO CALENDAR</button><button class="magic-action" data-magic="ember">LIGHT THE HAVAN ✦</button></div></div>
+          </article>
+        </div>
+
+        <div id="transition" class="transition" aria-hidden="true" data-type="none">
+          <div class="transition-veil"></div>
+          <div class="transition-ring"><span class="transition-diamond"></span></div>
+          <div class="transition-folio"><i></i><i></i></div>
+          <div class="transition-marigolds"></div>
+          <div class="transition-dhol"><i></i><i></i><i></i></div>
+          <div class="transition-shards"></div>
+          <div class="transition-havan"><div class="fire-glow"></div>
+            <svg class="fire-art" viewBox="0 0 420 800" preserveAspectRatio="xMidYMax slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <defs>
+                <linearGradient id="outerFire" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#bf2b14"/><stop offset=".48" stop-color="#ff6c1b"/><stop offset=".83" stop-color="#ffae36"/><stop offset="1" stop-color="#ffeb9a"/></linearGradient>
+                <linearGradient id="innerFire" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#f46d1a"/><stop offset=".55" stop-color="#ffba44"/><stop offset="1" stop-color="#fff8bb"/></linearGradient>
+                <filter id="fireBlur"><feGaussianBlur stdDeviation="11"/></filter>
+              </defs>
+              <path d="M0 800 C18 670 55 630 22 510 C91 566 115 612 100 710 C105 578 196 523 141 359 C260 455 275 572 242 674 C301 524 324 456 304 284 C404 432 387 552 361 694 C387 634 394 601 420 555 L420 800Z" fill="#ff7f20" opacity=".43" filter="url(#fireBlur)"/>
+              <path d="M-20 810 C9 711 57 675 45 551 C86 602 111 661 103 724 C122 619 192 571 155 422 C240 495 270 606 239 705 C286 589 326 521 318 360 C389 476 402 589 377 706 C400 661 405 643 440 593 L440 820Z" fill="url(#outerFire)"/>
+              <path d="M26 820 C43 743 82 701 71 640 C106 669 118 730 111 772 C134 695 205 637 194 527 C260 616 263 705 244 769 C289 693 338 629 340 530 C378 632 377 701 352 777 L398 820Z" fill="url(#innerFire)" opacity=".94"/>
+              <path d="M95 830 C135 757 171 734 173 654 C223 715 221 767 218 795 C254 739 285 720 293 666 C319 727 319 778 309 819Z" fill="#fff1a2" opacity=".75"/>
+              <g fill="#ffe7a0" opacity=".75"><circle cx="81" cy="299" r="3"/><circle cx="193" cy="194" r="2.3"/><circle cx="295" cy="243" r="3"/><circle cx="343" cy="372" r="2"/><circle cx="139" cy="340" r="2"/><circle cx="236" cy="126" r="2"/></g>
+            </svg><i class="fire f1"></i><i class="fire f2"></i><i class="fire f3"></i><i class="fire f4"></i><i class="fire f5"></i><i class="fire f6"></i></div>
+          <div class="transition-copy"><p id="transitionKicker">A NEW CHAPTER</p><strong id="transitionName">THE CELEBRATION</strong><span>✦</span></div>
+        </div>
+        <div class="film-ui">
+          <div class="chapter-counter"><span id="chapterCount">01</span><i>/</i>07 <small id="chapterLabel">THE INVITATION</small></div>
+          <div class="chapter-dots" id="chapterDots" role="navigation" aria-label="Wedding chapters"></div>
+          <div class="swipe-cue" id="swipeCue"><span>SWIPE TO CONTINUE</span><i>⌄</i></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="finale" id="visit">
+      <div class="finale-light"></div>
+      <div class="finale-inner">
+        <p class="eyebrow">WITH LOVE FROM OUR FAMILIES</p><h2>It wouldn't be the same <em>without you.</em></h2>
+        <p class="finale-lead">Your presence, your blessings and your smiles are what make this celebration complete.</p>
+        <div class="finale-cards">
+          <article><p class="card-eyebrow">THE DESTINATION</p><h3>Shivdhara Resort</h3><p>Chitrasani, Deesa Highway<br>Palanpur, Gujarat, India</p><p class="highlight-date">10 &amp; 11 DECEMBER 2026</p><div class="actions"><a class="cta cta-primary" href="https://www.google.com/maps/search/?api=1&amp;query=Shivdhara+Resort%2C+Palanpur%2C+Gujarat" target="_blank" rel="noopener noreferrer">OPEN MAPS ↗</a><button id="copyVenue" class="cta cta-outline">COPY ADDRESS</button></div></article>
+          <article><p class="card-eyebrow">RSVP WITH LOVE</p><h3>We can't wait to see you.</h3><p>For RSVP and celebration details, kindly contact our family.</p><a href="tel:+919413373248" class="rsvp-number">+91 94133 73248</a><p class="rsvp-name">SHRI NARAYANLAL AGRAWAL</p><div class="actions"><button id="shareButton" class="cta cta-primary">SHARE INVITATION ↗</button><button id="calendarAll" class="cta cta-outline">SAVE ALL EVENTS</button></div></article>
+        </div>
+        <p class="footer-monogram">Aditya <span>&amp;</span> Shreya</p>
+        <p class="footer-credit">DEMO PHOTOGRAPHY ONLY · PLEASE REPLACE WITH THE COUPLE'S OWN PHOTOS BEFORE SHARING PUBLICLY</p>
+        <button class="back-top" id="backTop">BACK TO THE BEGINNING ↑</button>
+      </div>
+    </section>
+  </main>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <audio id="music" src="assets/celebration-soundscape.mp3" loop preload="none"></audio>
+</body>
+</html>
